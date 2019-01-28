@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    {% for location in locations %}
+        {{ location.votes }}
+    {% endfor %}
+{% endblock %}

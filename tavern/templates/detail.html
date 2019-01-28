@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ lunch.nickname }}
+
+    {% for location in locations %}
+        {{ location.restaurant_suggestions }}
+    {% endfor %}
+{% endblock %}

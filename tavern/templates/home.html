@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for lunch in lunches %}
+    {{ lunch.nickname }}
+    {% endfor %}
+
+     {% for lunch in lunches %}
+    {{ lunch.user }}
+    {% endfor %}
+
+     {% for lunch in lunches %}
+    {{ lunch.date }}
+    {% endfor %}
+
+{% endblock %}
