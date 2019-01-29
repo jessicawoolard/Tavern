@@ -1,9 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {{ lunch.nickname }}
 
+    {{ lunch.nickname }}
+<table>
     {% for location in locations %}
-        {{ location.restaurant_suggestions }}
+     <tr> 
+        <td>{{ location.restaurant_suggestions }}</td>
+         <td>
+             <form action="http://127.0.0.1:8000/{{ lunch.id }}/vote/" method="post">
+                 {% csrf_token %}
+                 <input type="hidden" name="location" value="{{ location.id }}">
+                 <input type="submit" name="submit_button" value="Vote">
+             </form>
+         </td>
+     </tr>
     {% endfor %}
+
+</table>
 {% endblock %}
+
+{#add button to vote on lunch location#}

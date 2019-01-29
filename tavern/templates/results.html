@@ -2,8 +2,12 @@
 
 {% block content %}
 
-
+<table>
     {% for location in locations %}
-        {{ location.votes }}
+        <tr>
+        <td>{{ location }}</td>
+       <td>{{ location.votes }}</td>
+        </tr>
     {% endfor %}
+</table>
 {% endblock %}

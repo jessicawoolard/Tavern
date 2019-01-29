@@ -1,16 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for lunch in lunches %}
-    {{ lunch.nickname }}
-    {% endfor %}
+    <p>Which lunch group would you like to enter?</p>
 
-     {% for lunch in lunches %}
-    {{ lunch.user }}
-    {% endfor %}
+    <table>
+        {% for lunch in lunches %}
+            <tr>
+                <td>
+                    <a href="http://127.0.0.1:8000/{{ lunch.id }}">{{ lunch.nickname }}
+                    </a>
+                </td>
 
-     {% for lunch in lunches %}
-    {{ lunch.date }}
-    {% endfor %}
+                <td>(<em>Created by: {{ lunch.user }}</em>)</td>
+                    <td>on {{ lunch.date }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
 
 {% endblock %}
