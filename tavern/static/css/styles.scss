@@ -1,0 +1,19 @@
+$font-stack: Pacifico, cursive;
+body {
+  header {
+    font-family: $font-stack;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    padding: 15px 10px 0 10px;
+      .logo {
+        width: 50%;
+      }
+
+      .create_poll{
+        float: right;
+      }
+  }
+  img {
+    margin-top: 20px;
+  }
+}

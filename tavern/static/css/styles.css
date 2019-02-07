@@ -1,3 +1,17 @@
-
+body header {
+  font-family: Pacifico, cursive;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  padding: 15px 10px 0 10px;
+}
+body header .logo {
+  width: 50%;
+}
+body header .create_poll {
+  float: right;
+}
+body img {
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=styles.css.map */
