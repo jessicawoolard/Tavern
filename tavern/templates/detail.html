@@ -8,7 +8,7 @@
      <tr> 
         <td>{{ location.restaurant_suggestions }}</td>
          <td>
-             <form action="http://127.0.0.1:8000/{{ lunch.id }}/vote/" method="post">
+             <form action="{% url 'tavern:vote' lunch.id %}" method="post">
                  {% csrf_token %}
                  <input type="hidden" name="location" value="{{ location.id }}">
                  <input type="submit" name="submit_button" value="Vote">
