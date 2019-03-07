@@ -7,16 +7,24 @@ body {
     padding: 15px 10px 0 10px;
       .logo {
         width: 50%;
+        color: black;
       }
 
       .create_poll{
         float: right;
+
       }
   }
-  img {
+
+  .lunch-name {
+    margin-top: 20px;
+    font-family: Playfair Display sans-serif;
+
+  }
+  .img {
     margin-top: 20px;
   }
-  footer {
+  .footer {
     text-align: center;
     margin: 50px;
   }

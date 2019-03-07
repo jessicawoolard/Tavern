@@ -49,7 +49,6 @@ class ResultsView(TemplateView):
 
 
 class VotesView(View):
-
     def post(self, request, **kwargs):
         lunch_pk = self.kwargs.get('pk')
         lunch = Lunch.objects.get(pk=lunch_pk)

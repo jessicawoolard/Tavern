@@ -9,31 +9,27 @@
               integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
               crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link rel="stylesheet" href="../static/css/styles.css" class="stylesheet">
 
         <title>Tavern</title>
     </head>
     <body>
-    <div class="container">
-    <header>
-        <p class="logo">Tavern</p>
-        <p class="create_poll">Create Poll</p>
-    </header>
         <div class="container">
+            <header>
+                <a href="{% url 'tavern:home' %}" class="logo" type="">Tavern</a>
+                <p class="create_poll">Create Poll</p>
+            </header>
+            <div class="container">
+
+                {% block content %}
 
 
-            <h1>Tavern</h1>
-            <div>
-
+                {% endblock %}
             </div>
-            {% block content %}
-
-
-            {% endblock %}
+            <footer class="footer">
+                &copy; 2019 Tavern, Inc
+            </footer>
         </div>
-    <footer>
-        &copy; 2019 Tavern, Inc
-    </footer>
-</div>
     </body>
 </html>

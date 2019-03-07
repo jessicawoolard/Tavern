@@ -2,11 +2,11 @@
 
 {% block content %}
 
-    {{ lunch.nickname }}
+   <p class="lunch-name"> {{ lunch.nickname }}</p>
 <table>
     {% for location in locations %}
      <tr> 
-        <td>{{ location.restaurant_suggestions }}</td>
+        <td class="lunch-suggestions">{{ location.restaurant_suggestions }}</td>
          <td>
              <form action="{% url 'tavern:vote' lunch.id %}" method="post">
                  {% csrf_token %}

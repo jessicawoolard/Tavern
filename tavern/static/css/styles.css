@@ -6,14 +6,19 @@ body header {
 }
 body header .logo {
   width: 50%;
+  color: black;
 }
 body header .create_poll {
   float: right;
 }
-body img {
+body .lunch-name {
+  margin-top: 20px;
+  font-family: Playfair Display sans-serif;
+}
+body .img {
   margin-top: 20px;
 }
-body footer {
+body .footer {
   text-align: center;
   margin: 50px;
 }
